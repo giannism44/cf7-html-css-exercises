@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <div>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">'Αντρας</label>
+            <input type="radio" id="female" value="female" name="gender" checked>
+            <label for="female">Γυναίκα</label>
+        </div>
+        <div>
+            <input type="checkbox" value="bike" id="bicycle">
+            <label for="bicycle">Ποδήλατο</label>
+            <input type="checkbox" id="motorcycle" value="motorcycle" checked>
+            <label for="motorcycle">Μοτοσυσκλέτα</label>
+            <input type="checkbox" id="car" value="car">
+            <label for="car">Αυτοκίνητο</label>
+        </div>
+        <div>
+            <label for="nationality">Υπηκοότητα</label>
+            <select id="nationality">
+                <option value=""disabled selected hidden>Επιλέψτε Υπηκοότητα</option>
+                <option value="greek">Ελλάδα</option>
+                <option value="english">Αγγλία</option>
+                <option value="spanish">Ισπανία</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Προσωπικά στοιχεία</legend>
+            <div>
+                <label for="firstname">Ονομα:</label>
+                <input type="text" id="firstname" placeholder="Εισάγετε όνομα" required minlength="5" maxlength="10">
+            </div>
+            <div>
+                <label for="Επίθετο">Επίθετο:</label>
+                <input type="text" id="lastname" placeholder="Εισάγετε Επίθετο">
+            </div>
+            <div>
+                <label for="workExpirierce">Χρόνια Προυπερησίας:</label>
+                <input type="number" id="workExpirierce" min="3" max="10">
+            </div>
+        </fieldset>     
+        <div>
+            <label for="birthday">Χρονολογία Γέννησης:</label>
+            <input type="date" id="birthday">
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <input type="submit" value="Υποβολή">
+            <input type="reset" value="Επαναφορά">
+        </div>
+    </form>
+</body>
+</html>
